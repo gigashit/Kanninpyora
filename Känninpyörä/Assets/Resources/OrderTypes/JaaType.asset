@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: JaaType
   m_EditorClassIdentifier: Assembly-CSharp::OrderTypeObject
   orderType: 1
+  orderTypeIcon: {fileID: 21300000, guid: 9041a8691397ce042b39865ae04c6a7b, type: 3}
+  orderTypeColor: {r: 0.7075472, g: 0.2354975, b: 0.110137075, a: 1}
   baseWeight: 3.5
   modifiedWeight: 3.5
+  minimumAnimationIndex: 5
+  maximumAnimationIndex: 6

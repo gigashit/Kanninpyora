@@ -15,10 +15,11 @@ public class VisualPlayerEntry : MonoBehaviour
         removeButton.onClick.AddListener(RemoveEntry);
     }
 
-    public void SetupEntry(string playerName, PlayerListHandler handler)
+    public void SetupEntry(Player player, PlayerListHandler handler)
     {
-        currentPlayerName = playerName;
-        playerNameText.text = playerName;
+        currentPlayerName = player.playerName;
+        playerNameText.text = player.playerName;
+        playerNameText.color = player.playerColor;
         playerListHandler = handler;
     }
 

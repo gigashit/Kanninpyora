@@ -16,6 +16,5 @@ MonoBehaviour:
   orderType: 0
   orderBodyText: "Pelaaja <b>\" + GetRandomPlayer() + \"</b> juo <b>\" + GetRandomSips(2,
     3) + \"</b> h\xF6rppy\xE4!"
-  minimumSips: 0
-  maximumSips: 0
-  weight: 1
+  baseWeight: 1
+  modifiedWeight: 1

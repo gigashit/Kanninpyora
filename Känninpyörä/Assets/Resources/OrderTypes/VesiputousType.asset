@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db3893ee931f43b48874c427eddfbec0, type: 3}
   m_Name: VesiputousType
   m_EditorClassIdentifier: Assembly-CSharp::OrderTypeObject
-  orderType: 4
-  baseWeight: 0.4
-  modifiedWeight: 0.4
+  orderType: 5
+  orderTypeIcon: {fileID: 21300000, guid: 844ed36000411c74a823c7ffe658a5bc, type: 3}
+  orderTypeColor: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
+  baseWeight: 0.6
+  modifiedWeight: 0.6
+  minimumAnimationIndex: 12
+  maximumAnimationIndex: 13

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,25 +7,34 @@ public class PlayerListHandler : MonoBehaviour
 {
     [Header("Player List")]
     public List<Player> playerList = new List<Player>();
+    public List<Color> playerColors = new List<Color>();
 
     [Header("Buttons")]
     [SerializeField] private Button openAddPlayerPanelButton;
 
     [Header("Script References")]
     [SerializeField] private PlayerAddingHandler playerAddingHandler;
+    [SerializeField] private OrderHandler orderHandler;
 
     [Header("Prefabs")]
     [SerializeField] private GameObject playerEntryPrefab;
 
     [Header("UI References")]
     [SerializeField] private Transform playerListContent;
+    [SerializeField] private TMP_Text tipText;
+    [SerializeField] private Animator wheelAnimator;
+
+    [Header("Values")]
+    [SerializeField] private string notEnoughPlayersText;
+    [SerializeField] private string enoughPlayersText;
 
     [Header("Flags")]
     public bool playerListLoaded = false;
 
+    private List<Color> unusedPlayerColors = new List<Color>();
+
     private void Start()
     {
-
         LoadPlayerList();
 
         openAddPlayerPanelButton.onClick.AddListener(playerAddingHandler.OpenPanel);
@@ -36,13 +46,15 @@ public class PlayerListHandler : MonoBehaviour
         newPlayer.playerName = playerString;
         newPlayer.baseWeight = 1;
         newPlayer.modifiedWeight = 1;
+        newPlayer.playerColor = GetRandomColor();
 
+        unusedPlayerColors.Remove(newPlayer.playerColor);
         playerList.Add(newPlayer);
 
         GameObject newEntry = Instantiate(playerEntryPrefab, playerListContent);
         VisualPlayerEntry entryScript = newEntry.GetComponent<VisualPlayerEntry>();
 
-        entryScript.SetupEntry(playerString, this);
+        entryScript.SetupEntry(newPlayer, this);
 
         Debug.Log("Added player = " +  playerString);
         PrintPlayerList();
@@ -55,6 +67,7 @@ public class PlayerListHandler : MonoBehaviour
         if (playerToRemove != null)
         {
             playerList.Remove(playerToRemove);
+            unusedPlayerColors.Add(playerToRemove.playerColor);
 
             Debug.Log("Removed player = " + playerString);
         }
@@ -83,8 +96,28 @@ public class PlayerListHandler : MonoBehaviour
             }
         }
 
+        UpdateSpinButtonState();
+
         Debug.Log("Current Players = " + playersListed);
         SavePlayerList();
+    }
+
+    private void UpdateSpinButtonState()
+    {
+        bool enoughPlayers = false;
+
+        if (playerList.Count >= 2)
+        {
+            enoughPlayers = true;
+            tipText.text = enoughPlayersText;
+        }
+        else
+        {
+            tipText.text = notEnoughPlayersText;
+        }
+
+        orderHandler.spinButton.interactable = enoughPlayers;
+        wheelAnimator.SetBool("canPlay", enoughPlayers);
     }
 
     private void SavePlayerList()
@@ -106,6 +139,11 @@ public class PlayerListHandler : MonoBehaviour
 
     private void LoadPlayerList()
     {
+        foreach (Color color in playerColors)
+        {
+            unusedPlayerColors.Add(color);
+        }
+
         if (PlayerPrefs.HasKey("player0"))
         {
             bool morePlayers = true;
@@ -134,12 +172,20 @@ public class PlayerListHandler : MonoBehaviour
         }
 
         playerListLoaded = true;
+        UpdateSpinButtonState();
     }
+
+    private Color GetRandomColor()
+    {
+        return unusedPlayerColors[Random.Range(0, unusedPlayerColors.Count)];
+    }
+
 }
 
 public class Player
 {
     public string playerName;
+    public Color playerColor;
     public float baseWeight;
     public float modifiedWeight;
 }
