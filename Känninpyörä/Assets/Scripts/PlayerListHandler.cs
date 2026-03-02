@@ -15,6 +15,7 @@ public class PlayerListHandler : MonoBehaviour
     [Header("Script References")]
     [SerializeField] private PlayerAddingHandler playerAddingHandler;
     [SerializeField] private OrderHandler orderHandler;
+    [SerializeField] private DebugStatHandler debugStatHandler;
 
     [Header("Prefabs")]
     [SerializeField] private GameObject playerEntryPrefab;
@@ -99,6 +100,7 @@ public class PlayerListHandler : MonoBehaviour
         UpdateSpinButtonState();
 
         Debug.Log("Current Players = " + playersListed);
+        debugStatHandler.InitializePlayerStats(playerList);
         SavePlayerList();
     }
 

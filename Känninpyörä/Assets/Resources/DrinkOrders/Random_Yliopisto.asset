@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
-  m_Name: Juo
+  m_Name: Random_Yliopisto
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
-  orderTitle: Juo!
-  orderType: 0
-  orderBodyText: "[pelaaja] juo [2-4] h\xF6rppy\xE4!"
+  orderTitle: Gaudeamus Igitur
+  orderType: 6
+  orderBodyText: "Kaikki t\xE4ll\xE4 hetkell\xE4 <b>yliopistossa</b> opiskelevat
+    juovat [2-4] h\xF6rppy\xE4"
   baseWeight: 1
   modifiedWeight: 1

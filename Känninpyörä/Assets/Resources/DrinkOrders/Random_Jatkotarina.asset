@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
-  m_Name: Juo
+  m_Name: Random_Jatkotarina
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
-  orderTitle: Juo!
-  orderType: 0
-  orderBodyText: "[pelaaja] juo [2-4] h\xF6rppy\xE4!"
-  baseWeight: 1
-  modifiedWeight: 1
+  orderTitle: Jatkotarina
+  orderType: 6
+  orderBodyText: "Jokainen jatkaa tarinaa uudella sanalla, toistaen ensiksi jo kerrotun
+    tarinan. Tarinan aloittaa [pelaaja] ja vuoro siirtyy my\xF6t\xE4p\xE4iv\xE4\xE4n.
+    Ep\xE4onnistuja juo [4-6] h\xF6rppy\xE4. "
+  baseWeight: 1.4
+  modifiedWeight: 1.4

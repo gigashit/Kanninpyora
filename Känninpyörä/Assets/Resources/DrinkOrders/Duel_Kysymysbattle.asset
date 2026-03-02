@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
-  m_Name: Juo
+  m_Name: Duel_Kysymysbattle
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
-  orderTitle: Juo!
-  orderType: 0
-  orderBodyText: "[pelaaja] juo [2-4] h\xF6rppy\xE4!"
+  orderTitle: Kaksintaistelu!
+  orderType: 2
+  orderBodyText: "Pelaajat [pelaaja] ja [pelaaja] k\xE4yk\xE4\xE4 vuoropuhelua, mutta
+    pelkill\xE4 <b>kysymyksill\xE4.</b> Eli toisen kysymykseen on vastattava kysymyksell\xE4
+    jne. Nuorempi aloittaa. Pelaaja, joka j\xE4\xE4tyy tai ei kysy uniikkia j\xE4rkev\xE4\xE4
+    kysymyst\xE4 juo [4-6] h\xF6rppy\xE4."
   baseWeight: 1
   modifiedWeight: 1

@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
-  m_Name: Juo
+  m_Name: "Random_H\xF6p\xF6h\xF6p\xF6Ala"
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
-  orderTitle: Juo!
-  orderType: 0
-  orderBodyText: "[pelaaja] juo [2-4] h\xF6rppy\xE4!"
+  orderTitle: "Oikeisiin T\xF6ihin"
+  orderType: 6
+  orderBodyText: "[pelaaja], kuvaile alaasi 3 sanalla. Jos muut pelaajat eiv\xE4t
+    ole t\xE4h\xE4n tyytyv\xE4isi\xE4, alasi on <b>h\xF6p\xF6h\xF6p\xF6-ala</b> ja
+    joudut juoda [3-5] h\xF6rppy\xE4."
   baseWeight: 1
   modifiedWeight: 1

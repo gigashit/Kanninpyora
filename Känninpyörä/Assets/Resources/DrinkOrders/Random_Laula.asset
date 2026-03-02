@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
-  m_Name: Juo
+  m_Name: Random_Laula
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
-  orderTitle: Juo!
-  orderType: 0
-  orderBodyText: "[pelaaja] juo [2-4] h\xF6rppy\xE4!"
+  orderTitle: Sta-Sta-Staraoke!
+  orderType: 6
+  orderBodyText: "[pelaaja], laula biisi\xE4, jossa esiintyy sana [sana] (Sanaa saa
+    taivuttaa). Suoritukseen riitt\xE4\xE4, ett\xE4 edes yksi toinen pelaaja tunnistaa
+    kappaleen, tai voit saman tien todistaa kappaleen olemassaolon. Jos ei heti onnistu,
+    juo [3-5] h\xF6rppy\xE4.\r\n "
   baseWeight: 1
   modifiedWeight: 1

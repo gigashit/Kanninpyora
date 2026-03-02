@@ -3,6 +3,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Text.RegularExpressions;
 
 public class OrderHandler : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class OrderHandler : MonoBehaviour
 
     [Header("Script References")]
     [SerializeField] private PlayerListHandler playerListHandler;
+    [SerializeField] private DebugStatHandler debugStatHandler;
 
     [Header("Values")]
     [SerializeField] private float weightModifier;
@@ -34,6 +36,9 @@ public class OrderHandler : MonoBehaviour
     private OrderTypeObject rolledOrderType;
     private DrinkOrder rolledOrder;
     [HideInInspector] public int roundCount = 0;
+
+    [Header("Listat")]
+    [SerializeField] private List<string> randomWords = new List<string>();
 
     private Color dimmerColor = new Color(0f, 0f, 0f, 0.6f);
     private Color transparentColor = new Color(0f, 0f, 0f, 0f);
@@ -87,11 +92,41 @@ public class OrderHandler : MonoBehaviour
         leftIcon.sprite = rolledOrderType.orderTypeIcon;
         rightIcon.sprite = rolledOrderType.orderTypeIcon;
         titleText.text = rolledOrder.orderTitle;
-        bodyText.text = rolledOrder.orderBodyText;
+        bodyText.text = GenerateDrinkOrderText(rolledOrder.orderBodyText);
 
         popupAnimator.SetTrigger("Bounce");
 
         Invoke(nameof(EnableContinueButton), 3f);
+    }
+
+    public string GenerateDrinkOrderText(string template)
+    {
+        string result = template;
+
+        result = Regex.Replace(result, @"\[pelaaja\]", match =>
+        {
+            Player p = GetRandomPlayer();
+            string hexColor = ColorUtility.ToHtmlStringRGB(p.playerColor);
+
+            return $"<b><color=#{hexColor}>{p.playerName}</color></b>";
+        });
+
+        result = Regex.Replace(result, @"\[(\d+)-(\d+)\]", match =>
+        {
+            int min = int.Parse(match.Groups[1].Value);
+            int max = int.Parse(match.Groups[2].Value);
+
+            int sips = GetRandomSips(min, max);
+
+            return $"<b><color=#FFFFFF>{sips}</color></b>";
+        });
+
+        result = Regex.Replace(result, @"\[sana\]", match =>
+        {
+            return $"<b><color=#C8C8C8>{GetRandomWord()}</color></b>";
+        });
+
+        return result;
     }
 
     private void EnableContinueButton()
@@ -162,13 +197,15 @@ public class OrderHandler : MonoBehaviour
             }
         }
 
+        debugStatHandler.UpdateRollStats(rolledOrderType);
+
         // Reset rolled type weight, increase other weights
 
         selectedOrderType.modifiedWeight = selectedOrderType.baseWeight;
 
         foreach (OrderTypeObject type in orderTypes)
         {
-            if (type != selectedOrderType || type.orderType != OrderType.Random || type.orderType != OrderType.Juo || type.orderType != OrderType.Jaa)
+            if (type != selectedOrderType || type.orderType != OrderType.Juo || type.orderType != OrderType.Jaa)
             {
                 type.modifiedWeight += type.baseWeight * weightModifier;
             }
@@ -231,6 +268,11 @@ public class OrderHandler : MonoBehaviour
         return selectedOrder;
     }
 
+    private string GetRandomWord()
+    {
+        return randomWords[Random.Range(0, randomWords.Count)];
+    }
+
     public int GetRandomSips(int min, int max)
     {
         return Random.Range(min, max + 1);
@@ -282,6 +324,7 @@ public class OrderHandler : MonoBehaviour
         }
 
         previousPlayer = selectedPlayer;
+        debugStatHandler.UpdatePlayerStats(selectedPlayer);
         return selectedPlayer;
     }
 

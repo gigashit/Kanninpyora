@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
-  m_Name: Juo
+  m_Name: Tauko
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
-  orderTitle: Juo!
-  orderType: 0
-  orderBodyText: "[pelaaja] juo [2-4] h\xF6rppy\xE4!"
+  orderTitle: "V\xE4livesi!"
+  orderType: 4
+  orderBodyText: "Nesteytystauko! <b>Kaikki pelaajat</b>, k\xE4yk\xE4\xE4 h\xF6rpp\xE4\xE4m\xE4ss\xE4
+    <b><color=#FFFFFF>lasi vett\xE4!</color></b> Mutten on aamulla paha olo."
   baseWeight: 1
   modifiedWeight: 1

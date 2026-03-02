@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
-  m_Name: Juo
+  m_Name: "Random_PutkiP\xE4\xE4ll\xE4"
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
-  orderTitle: Juo!
-  orderType: 0
-  orderBodyText: "[pelaaja] juo [2-4] h\xF6rppy\xE4!"
+  orderTitle: "Onko Putki P\xE4\xE4ll\xE4?"
+  orderType: 6
+  orderBodyText: "Kaikki, jotka ovat viimeisen viikon aikana olleet jo <b>ryypp\xE4\xE4m\xE4ss\xE4</b>,
+    juovat [2-4] h\xF6rppy\xE4."
   baseWeight: 1
   modifiedWeight: 1
