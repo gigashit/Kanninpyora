@@ -8,7 +8,9 @@ public class DrinkOrder : ScriptableObject
     [TextArea(5, 10)]
     public string orderBodyText;
     public float baseWeight;
-    public float modifiedWeight;
+    [HideInInspector] public float modifiedWeight;
+    public bool isOneTime;
+    [HideInInspector] public bool hasAppeared;
 }
 
 public enum OrderType

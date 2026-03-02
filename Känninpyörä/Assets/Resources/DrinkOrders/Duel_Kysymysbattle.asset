@@ -16,7 +16,7 @@ MonoBehaviour:
   orderType: 2
   orderBodyText: "Pelaajat [pelaaja] ja [pelaaja] k\xE4yk\xE4\xE4 vuoropuhelua, mutta
     pelkill\xE4 <b>kysymyksill\xE4.</b> Eli toisen kysymykseen on vastattava kysymyksell\xE4
-    jne. Nuorempi aloittaa. Pelaaja, joka j\xE4\xE4tyy tai ei kysy uniikkia j\xE4rkev\xE4\xE4
-    kysymyst\xE4 juo [4-6] h\xF6rppy\xE4."
+    jne. Nuorempi aloittaa.<br><br>Pelaaja, joka j\xE4\xE4tyy tai ei kysy uniikkia
+    j\xE4rkev\xE4\xE4 kysymyst\xE4 juo [4-6] h\xF6rppy\xE4."
   baseWeight: 1
   modifiedWeight: 1

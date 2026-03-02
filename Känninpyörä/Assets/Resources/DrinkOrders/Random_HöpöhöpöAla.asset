@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
   orderTitle: "Oikeisiin T\xF6ihin"
   orderType: 6
-  orderBodyText: "[pelaaja], kuvaile alaasi 3 sanalla. Jos muut pelaajat eiv\xE4t
+  orderBodyText: "[pelaaja], kuvaile alaasi 3 sanalla.<br><br>Jos muut pelaajat eiv\xE4t
     ole t\xE4h\xE4n tyytyv\xE4isi\xE4, alasi on <b>h\xF6p\xF6h\xF6p\xF6-ala</b> ja
     joudut juoda [3-5] h\xF6rppy\xE4."
   baseWeight: 1

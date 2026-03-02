@@ -15,7 +15,7 @@ MonoBehaviour:
   orderTitle: "Kuka Tekee Tyhmyyksi\xE4?"
   orderType: 6
   orderBodyText: "Laskekaa kolmeen, jolloin kaikki osoittakaa sit\xE4 pelaajaa, joka
-    todenn\xE4k\xF6isimmin her\xE4\xE4 <b>putkasta</b> huomenaamuna. T\xE4m\xE4 pelaaja
-    juo [4-6] h\xF6rppy\xE4."
+    todenn\xE4k\xF6isimmin her\xE4\xE4 <b>putkasta</b> huomenaamuna.<br><br>T\xE4m\xE4
+    pelaaja juo [4-6] h\xF6rppy\xE4."
   baseWeight: 1
   modifiedWeight: 1

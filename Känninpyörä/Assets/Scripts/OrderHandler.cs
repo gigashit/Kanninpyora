@@ -43,6 +43,8 @@ public class OrderHandler : MonoBehaviour
     private Color dimmerColor = new Color(0f, 0f, 0f, 0.6f);
     private Color transparentColor = new Color(0f, 0f, 0f, 0f);
 
+    private Color originalTitleColor;
+
     private void Start()
     {
         LoadAllDrinkOrders();
@@ -58,6 +60,8 @@ public class OrderHandler : MonoBehaviour
         popupPanel.SetActive(false);
         popupPanelBackgroundButton.interactable = false;
         continueButton.gameObject.SetActive(false);
+
+        originalTitleColor = titleText.color;
     }
 
     private void OnApplicationQuit()
@@ -86,12 +90,17 @@ public class OrderHandler : MonoBehaviour
 
     public void ShowPopup()
     {
+        popupAnimator.gameObject.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
         popupPanel.SetActive(true);
 
         titleBackgroundImage.color = rolledOrderType.orderTypeColor;
         leftIcon.sprite = rolledOrderType.orderTypeIcon;
         rightIcon.sprite = rolledOrderType.orderTypeIcon;
         titleText.text = rolledOrder.orderTitle;
+
+        if (rolledOrderType.orderType == OrderType.Vesiputous) { titleText.color = Color.red; }
+        else { titleText.color = originalTitleColor; }
+
         bodyText.text = GenerateDrinkOrderText(rolledOrder.orderBodyText);
 
         popupAnimator.SetTrigger("Bounce");
@@ -137,6 +146,8 @@ public class OrderHandler : MonoBehaviour
 
     private void ResetPopup()
     {
+        popupAnimator.SetTrigger("Hide");
+
         spinButton.interactable = true;
 
         wheelBackground.raycastTarget = false;

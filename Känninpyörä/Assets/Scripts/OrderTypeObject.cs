@@ -7,7 +7,7 @@ public class OrderTypeObject : ScriptableObject
     public Sprite orderTypeIcon;
     public Color orderTypeColor;
     public float baseWeight;
-    public float modifiedWeight;
+    [HideInInspector] public float modifiedWeight;
     public int minimumAnimationIndex;
     public int maximumAnimationIndex;
 }

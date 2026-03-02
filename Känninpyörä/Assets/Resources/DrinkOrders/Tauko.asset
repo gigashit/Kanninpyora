@@ -15,6 +15,6 @@ MonoBehaviour:
   orderTitle: "V\xE4livesi!"
   orderType: 4
   orderBodyText: "Nesteytystauko! <b>Kaikki pelaajat</b>, k\xE4yk\xE4\xE4 h\xF6rpp\xE4\xE4m\xE4ss\xE4
-    <b><color=#FFFFFF>lasi vett\xE4!</color></b> Mutten on aamulla paha olo."
+    <b><color=#FFFFFF>lasi vett\xE4!</color></b><br><br>Mutten on aamulla paha olo."
   baseWeight: 1
   modifiedWeight: 1

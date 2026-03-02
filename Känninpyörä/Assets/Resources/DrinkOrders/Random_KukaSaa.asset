@@ -15,7 +15,7 @@ MonoBehaviour:
   orderTitle: Kuka Tekee Tuhmuuksia?
   orderType: 6
   orderBodyText: "Laskekaa kolmeen, jolloin kaikki osoittakaa sit\xE4 pelaajaa, jolla
-    todenn\xE4k\xF6isimmin on <b>tuoretta petiseuraa</b> y\xF6ll\xE4. T\xE4m\xE4
+    todenn\xE4k\xF6isimmin on <b>tuoretta petiseuraa</b> y\xF6ll\xE4.<br><br>T\xE4m\xE4
     pelaaja juo [4-6] h\xF6rppy\xE4."
   baseWeight: 1
   modifiedWeight: 1

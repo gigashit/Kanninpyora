@@ -15,7 +15,7 @@ MonoBehaviour:
   orderTitle: Sami Hedberg itse
   orderType: 6
   orderBodyText: "[pelaaja]: Kerro vitsi. Kaikki, joiden naama v\xE4\xE4ntyy edes
-    v\xE4h\xE4n juovat [2-3] h\xF6rppy\xE4. Jos kukaan ei reagoi mitenk\xE4\xE4n,
+    v\xE4h\xE4n juovat [2-3] h\xF6rppy\xE4.<br><br>Jos kukaan ei reagoi mitenk\xE4\xE4n,
     juo itse [4-6] h\xF6rppy\xE4."
   baseWeight: 1
   modifiedWeight: 1

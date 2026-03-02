@@ -22,6 +22,8 @@ public class DebugStatHandler : MonoBehaviour
     {
         List<Player> players = new List<Player>(ogPlayerList);
 
+        playerTurns.Clear();
+
         foreach(Player p in players)
         {
             playerTurns[p] = 0;
@@ -47,7 +49,7 @@ public class DebugStatHandler : MonoBehaviour
 
     private void RefreshPlayerStatsText()
     {
-        string playerStats = "Pelaajien vuorort:";
+        string playerStats = "Pelaajien vuorot:";
 
         foreach (var pair in playerTurns)
         {

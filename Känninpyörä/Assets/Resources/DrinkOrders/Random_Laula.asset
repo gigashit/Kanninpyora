@@ -16,7 +16,7 @@ MonoBehaviour:
   orderType: 6
   orderBodyText: "[pelaaja], laula biisi\xE4, jossa esiintyy sana [sana] (Sanaa saa
     taivuttaa). Suoritukseen riitt\xE4\xE4, ett\xE4 edes yksi toinen pelaaja tunnistaa
-    kappaleen, tai voit saman tien todistaa kappaleen olemassaolon. Jos ei heti onnistu,
-    juo [3-5] h\xF6rppy\xE4.\r\n "
+    kappaleen, tai voit saman tien todistaa kappaleen olemassaolon.<br><br>Jos ei
+    heti onnistu, juo [3-5] h\xF6rppy\xE4.\r\n "
   baseWeight: 1
   modifiedWeight: 1

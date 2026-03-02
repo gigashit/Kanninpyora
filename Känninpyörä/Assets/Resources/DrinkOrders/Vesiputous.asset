@@ -15,7 +15,7 @@ MonoBehaviour:
   orderTitle: VESIPUTOUS!
   orderType: 5
   orderBodyText: "Nonniin, kaikki aloittavat juomaan yht\xE4 aikaa ja juoman kittaamisen
-    saa lopettaa vasta kun <b>oikealla puolellasi</b> oleva pelaaja lopettaa. Ensimm\xE4isen\xE4
-    lopettaa saa [pelaaja]. <size=60%>Aamuja sen oikealla puolella istuvalle."
+    saa lopettaa vasta kun <b>oikealla puolellasi</b> oleva pelaaja lopettaa.<br><br>Ensimm\xE4isen\xE4
+    lopettaa saa [pelaaja]."
   baseWeight: 1
   modifiedWeight: 1
