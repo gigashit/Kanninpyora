@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
+  m_Name: Duel_Tuijotus
+  m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
+  orderTitle: Kaksintaistelu!
+  orderType: 2
+  orderBodyText: "Pelaajat [pelaaja] ja [pelaaja] ottakaa tuijotuskilpailu!<br><br>Pelaaja,
+    jonka naama v\xE4\xE4ntyy <b>yht\xE4\xE4n</b>, h\xE4vi\xE4\xE4 ja juo [4-6] h\xF6rppy\xE4.
+    Jos kymmenen sekunnin j\xE4lkeen kumpikaan ei anna periksi, kilpailu p\xE4\xE4ttyy
+    tasapeliin ja <b>kaikki muut pelaajat</b> juovat [2-3] h\xF6rppy\xE4."
+  baseWeight: 1
+  modifiedWeight: 1
+  isOneTime: 0
+  hasAppeared: 0

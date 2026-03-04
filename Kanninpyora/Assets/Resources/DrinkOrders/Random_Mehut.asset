@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
+  m_Name: Random_Mehut
+  m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
+  orderTitle: "Vett\xE4h\xE4n tuo vain on"
+  orderType: 6
+  orderBodyText: "Kaikki, joiden juoma on alle <b>4,4%</b> vahvuista, juokaa <b>juomanne
+    tyhj\xE4ksi</b>."
+  baseWeight: 1
+  modifiedWeight: 1
+  isOneTime: 1
+  hasAppeared: 0

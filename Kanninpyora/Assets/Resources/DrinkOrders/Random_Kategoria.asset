@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
+  m_Name: Random_Kategoria
+  m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
+  orderTitle: Kategoria
+  orderType: 6
+  orderBodyText: "Luetelkaa vuorotellen asioita, jotka kuuluvat kategoriaan [kategoria].<br><br>[pelaaja]
+    aloittaa, ja vuoro jatkuu my\xF6t\xE4p\xE4iv\xE4\xE4n.<br><br>Pelaaja, joka j\xE4\xE4tyy
+    tai sanoo jo aikaisemmin sanotun asian, juo [3-5] h\xF6rppy\xE4."
+  baseWeight: 1
+  modifiedWeight: 1
+  isOneTime: 0
+  hasAppeared: 0

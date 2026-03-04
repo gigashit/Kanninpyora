@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
+  m_Name: "Random_PutkiP\xE4\xE4ll\xE4"
+  m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
+  orderTitle: "Onko Putki P\xE4\xE4ll\xE4?"
+  orderType: 6
+  orderBodyText: "Kaikki, jotka ovat viimeisen viikon aikana olleet jo <b>ryypp\xE4\xE4m\xE4ss\xE4</b>,
+    juovat [2-4] h\xF6rppy\xE4."
+  baseWeight: 1
+  modifiedWeight: 1
+  isOneTime: 1
+  hasAppeared: 0
