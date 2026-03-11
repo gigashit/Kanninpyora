@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
-  m_Name: Vesiputous
+  m_Name: Random_Airfryer
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
-  orderTitle: VESIPUTOUS!
-  orderType: 5
-  orderBodyText: "Nonniin, kaikki aloittavat juomaan yht\xE4 aikaa ja juoman kittaamisen
-    saa lopettaa vasta kun <b>oikealla puolellasi</b> oleva pelaaja lopettaa, tai
-    juomasi loppuu.<br><br>Ensimm\xE4isen\xE4 lopettaa saa [pelaaja]."
+  orderTitle: Eiks SULLA oo Airfryeria?
+  orderType: 6
+  orderBodyText: "Jos omistat <b>Airfryerin</b>, juo [2-4] h\xF6rppy\xE4.<br><br>Jos
+    omistat MY\xD6S <b>Riisinkeittimen</b>, juo <b>juomasi loppuun</b>. "
   baseWeight: 1
   modifiedWeight: 1
-  isOneTime: 0
+  isOneTime: 1
   hasAppeared: 0

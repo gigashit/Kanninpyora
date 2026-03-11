@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
   orderTitle: SALAMAKIERROS!
   orderType: 3
-  orderBodyText: "Se joka viimeisen\xE4 koskettaa jotakin asiaa, joka on v\xE4rilt\xE4\xE4n
-    [v\xE4ri], juo [2-4] h\xF6rppy\xE4."
+  orderBodyText: "Koskettakaa jotakin, joka on v\xE4rilt\xE4\xE4n [v\xE4ri].<br><br>Viimeisen\xE4
+    toteuttanut juo [3-5] h\xF6rppy\xE4."
   baseWeight: 1
   modifiedWeight: 1
   isOneTime: 0

@@ -43,9 +43,13 @@ public class OrderHandler : MonoBehaviour
     [SerializeField] private List<string> randomWords = new List<string>();
     [SerializeField] private List<ColorString> randomColors = new List<ColorString>();
     [SerializeField] private List<string> categories = new List<string>();
+    [SerializeField] private List<string> ilmansuunnat = new List<string>();
+    [SerializeField] private List<string> kuukaudet = new List<string>();
+    [SerializeField] private List<string> hahmot = new List<string>();
 
     private Color dimmerColor = new Color(0f, 0f, 0f, 0.6f);
     private Color transparentColor = new Color(0f, 0f, 0f, 0f);
+    private Color rotateGlowColor = new Color(1f, 1f, 0.83f, 1f);
 
     private Color originalTitleColor;
 
@@ -91,7 +95,7 @@ public class OrderHandler : MonoBehaviour
         
         wheelAnimator.SetTrigger(trigger);
 
-        wheelRotatingGlow.color = Color.black;
+        wheelRotatingGlow.color = transparentColor;
     }
 
     public void ShowPopup()
@@ -151,6 +155,21 @@ public class OrderHandler : MonoBehaviour
             return $"<b><color=#C8C8C8>{GetRandomCategory()}</color></b>";
         });
 
+        result = Regex.Replace(result, @"\[ilmansuunta\]", match =>
+        {
+            return $"<b><color=#C8C8C8>{GetRandomIlmansuunta()}</color></b>";
+        });
+
+        result = Regex.Replace(result, @"\[kuukaudet\]", match =>
+        {
+            return $"<b><color=#C8C8C8>{GetRandomKuukausi()}</color></b>";
+        });
+
+        result = Regex.Replace(result, @"\[hahmot\]", match =>
+        {
+            return $"<b><color=#C8C8C8>{GetRandomHahmo()}</color></b>";
+        });
+
         return result;
     }
 
@@ -174,7 +193,7 @@ public class OrderHandler : MonoBehaviour
         popupPanel.SetActive(false);
 
         wheelAnimator.SetTrigger("resetWheel");
-        wheelRotatingGlow.color = Color.white;
+        wheelRotatingGlow.color = rotateGlowColor;
     }
 
     private void ResetAllWeights()
@@ -327,6 +346,21 @@ public class OrderHandler : MonoBehaviour
     private string GetRandomCategory()
     {
         return categories[UnityEngine.Random.Range(0, categories.Count)];
+    }
+
+    private string GetRandomIlmansuunta()
+    {
+        return ilmansuunnat[UnityEngine.Random.Range(0, ilmansuunnat.Count)];
+    }
+
+    private string GetRandomKuukausi()
+    {
+        return kuukaudet[UnityEngine.Random.Range(0, kuukaudet.Count)];
+    }
+
+    private string GetRandomHahmo()
+    {
+        return hahmot[UnityEngine.Random.Range(0, hahmot.Count)];
     }
 
     private string GetRandomColor()

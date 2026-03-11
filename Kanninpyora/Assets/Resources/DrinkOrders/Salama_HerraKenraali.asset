@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
-  m_Name: Vesiputous
+  m_Name: Salama_HerraKenraali
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
-  orderTitle: VESIPUTOUS!
-  orderType: 5
-  orderBodyText: "Nonniin, kaikki aloittavat juomaan yht\xE4 aikaa ja juoman kittaamisen
-    saa lopettaa vasta kun <b>oikealla puolellasi</b> oleva pelaaja lopettaa, tai
-    juomasi loppuu.<br><br>Ensimm\xE4isen\xE4 lopettaa saa [pelaaja]."
+  orderTitle: SALAMAKIERROS!
+  orderType: 3
+  orderBodyText: "Vet\xE4k\xE4\xE4 k\xE4si lippaan ja huutakaa <b>KYLL\xC4, HERRA
+    KENRAALI</b>.<br><br>Viimeisen\xE4 toteuttanut juo [3-5] h\xF6rppy\xE4."
   baseWeight: 1
   modifiedWeight: 1
-  isOneTime: 0
+  isOneTime: 1
   hasAppeared: 0

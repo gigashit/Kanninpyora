@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
   orderTitle: SALAMAKIERROS!
   orderType: 3
-  orderBodyText: "Se joka viimeisen\xE4 huutaa <b>KALA</b> juo [3-5] h\xF6rppy\xE4."
+  orderBodyText: "Huutakaa <b>KALA!</b><br><br>Viimeisen\xE4 huutanut juo [3-5] h\xF6rppy\xE4."
   baseWeight: 1
   modifiedWeight: 1
+  isOneTime: 0
+  hasAppeared: 0
