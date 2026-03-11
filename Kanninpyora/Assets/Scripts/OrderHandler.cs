@@ -24,6 +24,7 @@ public class OrderHandler : MonoBehaviour
     [SerializeField] private Image rightIcon;
     [SerializeField] private TMP_Text titleText;
     [SerializeField] private TMP_Text bodyText;
+    [SerializeField] private Image wheelRotatingGlow;
 
     [Header("Script References")]
     [SerializeField] private PlayerListHandler playerListHandler;
@@ -89,6 +90,8 @@ public class OrderHandler : MonoBehaviour
         string trigger = "wheelSpin" + roll;
         
         wheelAnimator.SetTrigger(trigger);
+
+        wheelRotatingGlow.color = Color.black;
     }
 
     public void ShowPopup()
@@ -171,6 +174,7 @@ public class OrderHandler : MonoBehaviour
         popupPanel.SetActive(false);
 
         wheelAnimator.SetTrigger("resetWheel");
+        wheelRotatingGlow.color = Color.white;
     }
 
     private void ResetAllWeights()
