@@ -15,7 +15,8 @@ MonoBehaviour:
   orderTitle: SALAMAKIERROS!
   orderType: 3
   orderBodyText: "Osoittakaa kohti suuntaa [ilmansuunta]<br><br>Viimeisen\xE4 toteuttanut,
-    tai t\xE4ysin v\xE4\xE4r\xE4\xE4n suuntaan osoittanut juo [3-5] h\xF6rppy\xE4."
+    tai t\xE4ysin v\xE4\xE4r\xE4\xE4n suuntaan osoittanut juo [3-5] h\xF6rppy\xE4.<br><br>Pelin
+    py\xF6ritt\xE4j\xE4n vuoro vaihtuu my\xF6t\xE4p\xE4iv\xE4\xE4n seuraavalle."
   baseWeight: 1
   modifiedWeight: 1
   isOneTime: 0

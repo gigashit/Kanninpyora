@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164cefed6ab8c4949bd9dcdbf97f391d, type: 3}
   m_Name: Random_Sakkoja
   m_EditorClassIdentifier: Assembly-CSharp::DrinkOrder
-  orderTitle: "Oikeisiin T\xF6ihin"
+  orderTitle: POLIISITAPAUS
   orderType: 6
   orderBodyText: "Kaikki, jotka ovat joskus maksaneet <b>sakkoja</b> juovat [2-4]
     h\xF6rppy\xE4."

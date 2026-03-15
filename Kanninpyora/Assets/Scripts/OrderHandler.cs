@@ -160,12 +160,12 @@ public class OrderHandler : MonoBehaviour
             return $"<b><color=#C8C8C8>{GetRandomIlmansuunta()}</color></b>";
         });
 
-        result = Regex.Replace(result, @"\[kuukaudet\]", match =>
+        result = Regex.Replace(result, @"\[kuukausi\]", match =>
         {
             return $"<b><color=#C8C8C8>{GetRandomKuukausi()}</color></b>";
         });
 
-        result = Regex.Replace(result, @"\[hahmot\]", match =>
+        result = Regex.Replace(result, @"\[hahmo\]", match =>
         {
             return $"<b><color=#C8C8C8>{GetRandomHahmo()}</color></b>";
         });
